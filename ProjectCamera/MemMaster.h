@@ -4,10 +4,10 @@
 class MemMaster:
 {
   private:
-  static int ObjectCount = 0;
-  unsigned int Memcount =0;
-  unsigned int MemMax = 1250; // around 10KB, it does not make sense to have a bigger default value
-  bool ConstructApprover = true;
+  static int ObjectCount;
+  unsigned int Memcount;
+  unsigned int MemMax;
+  bool ConstructApprover;
   public:
   MemMaster();
   MemMaster(unsigned int MaximumOfMemory, bool AmIAllowedToConstwuctYetDaddyUwu); //I added the bool in the constructor for later development  with the UI 
