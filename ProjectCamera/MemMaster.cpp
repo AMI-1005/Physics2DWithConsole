@@ -3,7 +3,7 @@
 MemMaster::MemMaster()
 {
   static int ObjectCount = 0;
-  unsigned int Memcount =0;
+  unsigned int Memsize =0;
   unsigned int MemMax = 1250; // around 10KB, it does not make sense to have a bigger default value
   bool ConstructApprover = true;
   //Also very ugly way of writing this constructor
@@ -21,9 +21,9 @@ void MemMaster::MemReport()
 {
   std::cout<<"----------------------------------------------"<<'\n';
   std::cout<<"Number of objects loaded:"<<ObjectCount<<'\n';
-  std::cout<<"Memory occupied"<<Memcount<<" bytes"<<'\n';
-  std::count<<"Free memory"<<MemMax-Memcount<<" bytes"<'\n';
-  if((MemMax-Memcount)<=(MemMax/4))
+  std::cout<<"Memory occupied"<<Memsize<<" bytes"<<'\n';
+  std::count<<"Free memory"<<MemMax-Memsize<<" bytes"<'\n';
+  if((MemMax-Memsize)<=(MemMax/4))
   {
     std::cout<<"WARNING! OVER 75% OF MEMORY USED"<<'\n';
   }
