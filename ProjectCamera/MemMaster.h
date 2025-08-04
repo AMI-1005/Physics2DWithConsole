@@ -11,8 +11,8 @@ class MemMaster:
   public:
   MemMaster();
   MemMaster(unsigned int MaximumOfMemory, bool AmIAllowedToConstwuctYetDaddyUwu); //I added the bool in the constructor for later development  with the UI 
-  virtual int& RaiseObjcount();
-  virtual unsigned int& Memcount();
+  virtual int& RaiseObjcount() = 0;
+  virtual unsigned int& Memcount() = 0;
   bool SwitchConstructor();//I will Xor this to avoid redundancy
   unsigned int SetMemMax(unsigned int NewVal);//Too lazy to overload the equal operator
   void  MemReport();
