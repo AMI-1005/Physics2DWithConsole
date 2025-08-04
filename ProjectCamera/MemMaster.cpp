@@ -17,5 +17,16 @@ unsigned int MemMaster::SetMemMax(unsigned int NewVal)
 {
   MemMax = NewVal;
 }
+void MemMaster::MemReport()
+{
+  std::cout<<"----------------------------------------------"<<'\n';
+  std::cout<<"Number of objects loaded:"<<ObjectCount<<'\n';
+  std::cout<<"Memory occupied"<<Memcount<<" bytes"<<'\n';
+  std::count<<"Free memory"<<MemMax-Memcount<<" bytes"<'\n';
+  if((MemMax-Memcount)<=(MemMax/4))
+  {
+    std::cout<<"WARNING! OVER 75% OF MEMORY USED"<<'\n';
+  }
+}
 //the other two are virtual
 //AMI
