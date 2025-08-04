@@ -5,7 +5,7 @@ class MemMaster:
 {
   private:
   static int ObjectCount;
-  unsigned int Memcount;
+  unsigned int Memsize;
   unsigned int MemMax;
   bool ConstructApprover;
   public:
