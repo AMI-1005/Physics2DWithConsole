@@ -15,6 +15,7 @@ class MemMaster:
   virtual unsigned int& Memcount();
   bool SwitchConstructor();//I will Xor this to avoid redundancy
   unsigned int SetMemMax(unsigned int NewVal);//Too lazy to overload the equal operator
+  void  MemReport();
   
 };
 //Literally not much to comment. It be very basic methods and very basic indexing. Very necessary tho.
