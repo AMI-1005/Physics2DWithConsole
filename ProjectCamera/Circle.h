@@ -3,7 +3,7 @@
 #include "Shape.h"
 #include "globals.h"
 #include <iostream> //debugging
-
+#include "MemMaster.h"
 /**
  * @class Circle
  * @brief Represents a drawable circle shape for the physics renderer.
@@ -11,7 +11,7 @@
  * Inherits from Shape and implements the Render method to draw a circle
  * at a given position using the SDL renderer.
  */
-class Circle : public Shape
+class Circle : public Shape, virtual MemMaster
 {
 public:
     float radius; ///< The radius of the circle
